@@ -1,23 +1,42 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+    * { font-family: 'Merriweather', serif; }
+    html, body { margin: 0; padding: 0; height: 100%; background-color: #337; }
+    header { padding: 1em; background-color: #337; color: #fff; }
+    nav { font-size: 2em; text-align: right; }
+    h1 { font-size: 2em; }
+    a { color: #fff; }
+    div.container { margin-right: auto; margin-left: auto; padding: 2em; }
+    @media (min-width: 850px) {
+      html, body { background-color: white; }
+      header { height: 60%; min-height: 300px; }
+      div.container {
+        width: 800px; position: relative; top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Cooney</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Michael Cooney</h1>
+        <p>I'm a software developer from Toronto, Ontario. Currently working at <a href="https://www.shopify.com">Shopify</a>.</p>
+        <nav>
+          <a title="blog" href="https://medium.com/@mkcny"><i class="fa fa-medium"></i></a>
+          <a title="photos" href="https://goo.gl/photos/y4umT1zEXDqfTzBr7"><i class="fa fa-camera-retro"></i></a>
+          <a title="github" href="https://github.com/mkcny"><i class="fa fa-github"></i></a>
+          <a title="twitter" href="https://twitter.com/mkcny"><i class="fa fa-twitter"></i></a>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
