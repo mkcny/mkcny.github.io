@@ -2,47 +2,37 @@
 <html>
   <head>
     <style>
-    * { font-family: 'trebuchet ms', sans-serif; }
-    html, body { margin: 0; padding: 0; height: 100%; }
-    header { padding: 1em; background-color: #337; color: #fff; }
-    nav { font-size: 2em; text-align: center; color: #337; padding: 2em; }
-    h1 { font-size: 2em; }
-    header a { color: #fff; }
-    nav a { color: #337; margin: 0.1em; }
-    div.container { margin-right: auto; margin-left: auto; padding: 2em; }
-    @media (max-width: 320px) {
-      h1 { font-size: 1.7em; }
-      nav a { margin: 0em; }
-    }
-    @media (min-width: 850px) {
-      html, body { background-color: white; }
-      header { height: 50%; min-height: 300px; }
-      nav a { margin: 1em; }
-      div.container {
-        width: 800px; position: relative; top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
-    }
+      * { font-family: 'georgia', serif; }
+      html, body { height: 100%; background-color: #f0f0f0; }
+      body { display: flex; justify-content: center; align-items: center; }
+      h1, nav a { font-family: 'trebuchet ms', sans-serif; }
+      h1 { color: #24b; }
+      a { color: #57e; }
+      header { float: left; max-width: 300px; text-align: right; }
+      nav { float: left; font-size: 1.5em; }
+      nav ul { list-style-type: none; }
+      nav a { text-decoration: none; }
+      li { margin: 0.2em; }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Cooney</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <div>
+      <header>
         <h1>Michael Cooney</h1>
         <p>I'm a software developer from Toronto, Ontario. Currently working at <a href="https://www.shopify.com">Shopify</a>.</p>
-      </div>
-    </header>
-    <nav>
-      <a title="links" href="https://pinboard.in/u:mkcny/"><i class="fa fa-link"></i></a>
-      <a title="blog" href="https://medium.com/@mkcny"><i class="fa fa-medium"></i></a>
-      <a title="photos" href="https://goo.gl/photos/y4umT1zEXDqfTzBr7"><i class="fa fa-camera-retro"></i></a>
-      <a title="github" href="https://github.com/mkcny"><i class="fa fa-github"></i></a>
-      <a title="twitter" href="https://twitter.com/mkcny"><i class="fa fa-twitter"></i></a>
-    </nav>
+      </header>
+      <nav>
+        <ul>
+          <li><a title="links" href="https://pinboard.in/u:mkcny/"><i class="fa fa-link"></i> Links</a></li>
+          <li><a title="blog" href="https://medium.com/@mkcny"><i class="fa fa-medium"></i> Blog</a></li>
+          <li><a title="photos" href="https://goo.gl/photos/y4umT1zEXDqfTzBr7"><i class="fa fa-camera-retro"></i> Photos</a></li>
+          <li><a title="github" href="https://github.com/mkcny"><i class="fa fa-github"></i> Github</a></li>
+          <li><a title="twitter" href="https://twitter.com/mkcny"><i class="fa fa-twitter"></i> Twitter</a></li>
+        </ul>
+      </nav>
+    </div>
     <script>
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
