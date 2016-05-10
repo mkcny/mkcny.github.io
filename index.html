@@ -3,16 +3,19 @@
   <head>
     <style>
       * { font-family: 'georgia', serif; }
-      html, body { height: 95%; background-color: #f0f0f0; margin: 0; padding: 0; }
-      body { display: flex; justify-content: center; align-items: center; }
+      body { background-color: #f0f0f0; }
       h1, nav a { font-family: 'trebuchet ms', sans-serif; }
       h1 { color: #24b; }
       a { color: #57e; }
-      header { float: left; max-width: 300px; text-align: right; }
-      nav { float: left; font-size: 1.5em; }
       nav ul { list-style-type: none; }
       nav a { text-decoration: none; }
       li { margin: 0.2em; }
+      @media (min-width: 850px) {
+        html, body { height: 95%; margin: 0; padding: 0; }
+        body { display: flex; justify-content: center; align-items: center; }
+        header { float: left; max-width: 300px; text-align: right; }
+        nav { float: left; font-size: 1.5em; }
+      }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Cooney</title>
